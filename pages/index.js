@@ -59,9 +59,9 @@ export default function Portfolio() {
               }}
               className={styles.brand}
               id={styles.brand}>
-              <Link href='/'>
-                <a className={styles.link}>penha.</a>
-              </Link>
+              <a href='/' className={styles.link}>
+                penha.
+              </a>
             </motion.div>
             <div className={styles.headerGroup} id={styles.headerGroup}>
               <motion.div
