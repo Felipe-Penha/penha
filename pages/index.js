@@ -325,7 +325,7 @@ export default function Portfolio() {
                 <p className={styles.aboutText} id={styles.aboutText}>
                   Meu nome é{' '}
                   <span className={styles.freelancer}>Felipe Penha</span>,
-                  estudo licenciatura em físca no Ifes, mas desde pequeno gosto
+                  estudo licenciatura em física no Ifes, mas desde pequeno gosto
                   de informática. Em 2014, completei o curso de Suporte A
                   Hardware E Redes De Computadores (Senai) e no início de 2020
                   comecei a estudar programação mais a fundo, voltando-me para o
