@@ -801,3 +801,16 @@
     }
   }
 }
+
+@media screen and (width: 720px) and (orientation: portrait) {
+  #body {
+    #grid1 {
+      height: 60vh;
+      background-position: center;
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
