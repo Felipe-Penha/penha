@@ -1,0 +1,74 @@
+@media only screen and (min-width: 1340px) {
+  #brand {
+    font-size: 60px;
+  }
+  #title {
+    font-size: 80px;
+  }
+
+  #description {
+    font-size: 30px;
+  }
+
+  #contactText {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  #contactLinks {
+    font-size: 25px;
+  }
+
+  #sectionTitle {
+    font-size: 25px;
+  }
+
+  #sectionDescription {
+    font-size: 25px;
+  }
+
+  #cardImage {
+    font-size: 80px;
+  }
+
+  #cardTitle {
+    font-size: 25px;
+  }
+
+  #cardDescription {
+    font-size: 20px;
+  }
+  #sectionAbout {
+    #contact {
+      display: flex;
+      align-items: center;
+
+      #contactText {
+        font-size: 22px;
+      }
+
+      #contactLinks {
+        font-size: 25px;
+      }
+    }
+  }
+  #aboutText {
+    font-size: 25px;
+  }
+
+  #image {
+    width: 300px;
+  }
+
+  #footer {
+    height: 100px;
+
+    #contactText {
+      font-size: 22px;
+    }
+
+    #contactLinks {
+      font-size: 25px;
+    }
+  }
+}

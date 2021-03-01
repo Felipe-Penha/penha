@@ -1,0 +1,803 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://use.typekit.net/aae4spt.css');
+//@import 'iPhone';
+
+.body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-basis: content;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  min-width: 360px;
+  //min-height: 2000px;
+
+  .link {
+    transition: color 0.15s ease;
+  }
+  .link:hover {
+    color: #0070f3;
+  }
+
+  .grid1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: content;
+    height: 100vh;
+    background-image: url('/webDev.svg');
+    background-repeat: no-repeat;
+    background-position: center 40px;
+    background-size: cover;
+    background-size: 60%;
+
+    .textContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      width: 100vw;
+      margin: 0 6.25rem;
+
+      .brand {
+        font-family: 'Poppins', sans-serif;
+        font-size: 35px;
+        font-weight: 300;
+        color: black;
+        transform: translate(0, -70px);
+        //text-shadow: 2px 2px black;
+      }
+
+      .headerGroup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        //-140px
+        transform: translate(0, -140px);
+        color: black;
+      }
+
+      .title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 60px;
+        font-weight: 500;
+        text-align: center;
+        color: #fd9b08;
+        //text-shadow: 2px 2px black;
+      }
+
+      .description {
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 1.6;
+        transform: translate(0, 10px);
+        max-width: 500px;
+        text-align: center;
+        color: black;
+      }
+
+      .contact {
+        display: flex;
+        flex-direction: column;
+        flex-basis: content;
+        flex-wrap: nowrap;
+        text-align: center;
+        //max-width: 80px;
+        transform: translate(0, 130px);
+
+        .contactText {
+          font-family: 'Poppins', sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          color: #fd9b08;
+          padding-bottom: 10px;
+          text-shadow: 1px 1px black;
+        }
+
+        .contactLinks {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          font-size: 18px;
+          color: black;
+          //text-shadow: 2px 2px black;
+
+          :not(:last-child) {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: content;
+    flex-wrap: nowrap;
+    margin: 0 6.25rem;
+
+    .freelancer {
+      color: #0070f3;
+    }
+
+    @keyframes scroll {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .page {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-basis: content;
+      flex-wrap: nowrap;
+      animation-name: scroll;
+      animation-duration: 2s;
+      animation-delay: calc(var(--scroll) * -1s);
+
+      .sectionTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .headerTitle {
+          margin-bottom: -20px;
+        }
+      }
+
+      .sectionDescription {
+        text-align: center;
+        line-height: 1.7;
+      }
+
+      .line {
+        height: 2px;
+        width: 30px;
+        background-color: #0070f3;
+      }
+
+      .cardsGrid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .card {
+          margin: 1rem;
+          flex-basis: content;
+          padding: 1.5rem;
+          text-align: center;
+          color: inherit;
+          text-decoration: none;
+          border: 1px solid black;
+          border-radius: 10px;
+          transition: color 0.15s ease, border-color 0.15s ease;
+
+          i {
+            font-size: 60px;
+          }
+        }
+        .card:hover,
+        .card:focus,
+        .card:active {
+          color: #0070f3;
+          border-color: #0070f3;
+        }
+      }
+
+      .sectionAbout {
+        display: flex;
+        flex-direction: column;
+
+        .aboutText {
+          text-align: justify;
+          line-height: 1.7;
+        }
+
+        .sectionImage {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .image {
+            margin-top: 25px;
+            width: 200px;
+          }
+
+          .contact {
+            display: flex;
+            flex-direction: column;
+            flex-basis: content;
+            flex-wrap: nowrap;
+            text-align: center;
+            max-width: 80px;
+
+            .contactText {
+              font-size: 16px;
+              font-weight: 500;
+              color: black;
+              padding: 10px 0;
+            }
+
+            .contactLinks {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              color: #fd9b08c5;
+
+              :not(:last-child) {
+                padding-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #374548;
+    height: 70px;
+
+    .footerGrid {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 6.25rem;
+      align-items: center;
+
+      .brand {
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        color: #f9f9f9;
+        transform: translate(0, 10px);
+      }
+
+      .contact {
+        display: flex;
+        flex-direction: column;
+        flex-basis: content;
+        flex-wrap: nowrap;
+        //text-align: center;
+        //max-width: 80px;
+
+        .contactText {
+          font-size: 16px;
+          font-weight: 500;
+          color: #fd9b08;
+          padding: 10px 0;
+          text-align: center;
+        }
+
+        .contactLinks {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          color: #f9f9f9;
+          font-size: 16px;
+
+          :not(:last-child) {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #body {
+    #grid1 {
+      height: 100vh;
+      background-position: center;
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #brand {
+    font-size: 25px;
+  }
+
+  #body {
+    #grid1 {
+      background-position: center;
+      height: 90vh;
+    }
+  }
+
+  #textContainer {
+    margin: 0 0.5rem;
+
+    #headerGroup {
+      transform: translate(0, -100px);
+    }
+    #title {
+      font-size: 35px;
+    }
+
+    #description {
+      font-size: 16px;
+    }
+  }
+
+  #contactText {
+    font-size: 14px;
+  }
+
+  #contactLinks {
+    font-size: 14px;
+  }
+
+  #headerTitle {
+    margin-bottom: -10px;
+  }
+
+  #sectionTitle {
+    font-size: 14px;
+  }
+
+  #sectionDescription {
+    font-size: 14px;
+  }
+
+  #cardImage {
+    font-size: 45px;
+  }
+
+  #cardTitle {
+    font-size: 16px;
+  }
+
+  #cardDescription {
+    font-size: 14px;
+  }
+
+  #image {
+    width: 100px;
+  }
+
+  #aboutText {
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  #footerGrid {
+    margin: 0 1.5rem;
+
+    #brand {
+      transform: translate(0, 10px);
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #brand {
+    font-size: 25px;
+    transform: translate(0, -50px);
+  }
+
+  #body {
+    #grid1 {
+      background-position: center;
+      height: 60vh;
+    }
+  }
+
+  #textContainer {
+    margin: 0 1rem;
+
+    #headerGroup {
+      transform: translate(0, -100px);
+    }
+    #title {
+      font-size: 35px;
+    }
+
+    #description {
+      font-size: 16px;
+    }
+  }
+
+  #contactText {
+    font-size: 14px;
+  }
+
+  #contactLinks {
+    font-size: 14px;
+  }
+
+  #headerTitle {
+    margin-bottom: -15px;
+  }
+
+  #sectionTitle {
+    font-size: 14px;
+  }
+
+  #sectionDescription {
+    font-size: 14px;
+  }
+
+  #cardImage {
+    font-size: 45px;
+  }
+
+  #cardTitle {
+    font-size: 16px;
+  }
+
+  #cardDescription {
+    font-size: 14px;
+  }
+
+  #image {
+    width: 100px;
+  }
+
+  #aboutText {
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  #footerGrid {
+    margin: 0 1.5rem;
+
+    #brand {
+      transform: translate(0, 10px);
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #body {
+    #grid1 {
+      background-position: center;
+      height: 110vh;
+    }
+
+    #brand {
+      transform: translate(0, -40px);
+    }
+
+    #footer {
+      #brand {
+        transform: translate(0, 10px);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  #grid1 {
+    background-position: center;
+    height: 80vh;
+
+    #textContainer {
+      margin: 0 3rem;
+    }
+
+    #brand {
+      transform: translate(0, -40px);
+    }
+  }
+}
+
+@media only screen and (min-width: 1340px) {
+  #brand {
+    font-size: 50px;
+  }
+  #title {
+    font-size: 80px;
+  }
+
+  #description {
+    font-size: 30px;
+  }
+
+  #contactText {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  #contactLinks {
+    font-size: 25px;
+  }
+
+  #sectionTitle {
+    font-size: 25px;
+  }
+
+  #sectionDescription {
+    font-size: 25px;
+  }
+
+  #cardImage {
+    font-size: 80px;
+  }
+
+  #cardTitle {
+    font-size: 25px;
+  }
+
+  #cardDescription {
+    font-size: 20px;
+  }
+  #sectionAbout {
+    #contact {
+      display: flex;
+      align-items: center;
+
+      #contactText {
+        font-size: 22px;
+      }
+
+      #contactLinks {
+        font-size: 25px;
+      }
+    }
+  }
+  #aboutText {
+    font-size: 25px;
+  }
+
+  #image {
+    width: 250px;
+  }
+
+  #footer {
+    height: 100px;
+
+    #brand {
+      font-size: 50px;
+    }
+
+    #contactText {
+      font-size: 22px;
+    }
+
+    #contactLinks {
+      font-size: 25px;
+    }
+  }
+}
+
+@media screen and (width: 812px) and (orientation: landscape) {
+  #body {
+    #grid1 {
+      height: 180vh;
+      background-position: center;
+
+      #brand {
+        transform: translate(1.2rem, -50px);
+      }
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media screen and (width: 736px) and (orientation: landscape) {
+  #body {
+    #grid1 {
+      height: 180vh;
+      background-position: center;
+
+      #brand {
+        transform: translate(1.2rem, -50px);
+      }
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media screen and (width: 720px) and (orientation: landscape) {
+  #body {
+    #grid1 {
+      height: 100vh;
+      background-position: center;
+
+      #brand {
+        transform: translate(1.2rem, -50px);
+      }
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media screen and (width: 667px) and (orientation: landscape) {
+  #body {
+    #grid1 {
+      height: 180vh;
+      background-position: center;
+
+      #brand {
+        transform: translate(1.2rem, -50px);
+      }
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media screen and (width: 653px) and (orientation: landscape) {
+  #body {
+    #grid1 {
+      height: 200vh;
+      background-position: center;
+
+      #brand {
+        transform: translate(1.2rem, -50px);
+      }
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media screen and (width: 568px) and (orientation: landscape) {
+  #body {
+    #grid1 {
+      height: 180vh;
+      background-position: center;
+
+      #brand {
+        transform: translate(1.2rem, -50px);
+      }
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media screen and (width: 640px) and (orientation: landscape) {
+  #body {
+    #grid1 {
+      height: 170vh;
+      background-position: center;
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media screen and (width: 731px) and (orientation: landscape) {
+  #body {
+    #grid1 {
+      height: 170vh;
+      background-position: center;
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media screen and (width: 823px) and (orientation: landscape) {
+  #body {
+    #grid1 {
+      height: 170vh;
+      background-position: center;
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media screen and (width: 1024px) and (orientation: landscape) {
+  #grid1 {
+    height: 100vh;
+    background-position: center;
+  }
+
+  #headerTitle {
+    margin-bottom: -5px;
+  }
+}
+
+@media screen and (width: 1366px) and (orientation: landscape) {
+  #grid1 {
+    height: 100vh;
+    background-position: center;
+  }
+}
+
+@media screen and (width: 360px) and (orientation: portrait) {
+  #body {
+    #grid1 {
+      height: 70vh;
+      background-position: center;
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media screen and (width: 375px) and (orientation: portrait) {
+  #body {
+    #grid1 {
+      height: 70vh;
+      background-position: center;
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media screen and (width: 414px) and (orientation: portrait) {
+  #body {
+    #grid1 {
+      height: 60vh;
+      background-position: center;
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media screen and (width: 800px) and (orientation: portrait) {
+  #body {
+    #grid1 {
+      height: 60vh;
+      background-position: center;
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media screen and (width: 411px) and (orientation: portrait) {
+  #body {
+    #grid1 {
+      height: 60vh;
+      background-position: center;
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
