@@ -398,9 +398,9 @@ export default function Portfolio() {
         <footer className={styles.footer} id={styles.footer}>
           <section className={styles.footerGrid} id={styles.footerGrid}>
             <div className={styles.brand} id={styles.brand}>
-              <Link href='/'>
-                <a className={styles.link}>penha.</a>
-              </Link>
+              <a href='/' className={styles.link}>
+                penha.
+              </a>
             </div>
             <div className={styles.contact} id={styles.contact}>
               <div className={styles.contactText} id={styles.contactText}>
