@@ -59,7 +59,7 @@ export default function Portfolio() {
               }}
               className={styles.brand}
               id={styles.brand}>
-              <Link href='/portfolio'>
+              <Link href='/'>
                 <a className={styles.link}>penha.</a>
               </Link>
             </motion.div>
@@ -394,42 +394,44 @@ export default function Portfolio() {
           </section>
         </main>
       </motion.div>
-      <footer className={styles.footer} id={styles.footer}>
-        <section className={styles.footerGrid} id={styles.footerGrid}>
-          <div className={styles.brand} id={styles.brand}>
-            <Link href='/portfolio'>
-              <a className={styles.link}>penha.</a>
-            </Link>
-          </div>
-          <div className={styles.contact} id={styles.contact}>
-            <div className={styles.contactText} id={styles.contactText}>
-              Contato
+      <motion.div style={{ opacity }}>
+        <footer className={styles.footer} id={styles.footer}>
+          <section className={styles.footerGrid} id={styles.footerGrid}>
+            <div className={styles.brand} id={styles.brand}>
+              <Link href='/'>
+                <a className={styles.link}>penha.</a>
+              </Link>
             </div>
-            <div className={styles.contactLinks} id={styles.contactLinks}>
-              <a
-                target='_blank'
-                href='https://www.linkedin.com/in/felipe-penha-966a01ab/'
-                className={styles.link}>
-                <i className={`fab fa-linkedin fa-lg`} />
-              </a>
+            <div className={styles.contact} id={styles.contact}>
+              <div className={styles.contactText} id={styles.contactText}>
+                Contato
+              </div>
+              <div className={styles.contactLinks} id={styles.contactLinks}>
+                <a
+                  target='_blank'
+                  href='https://www.linkedin.com/in/felipe-penha-966a01ab/'
+                  className={styles.link}>
+                  <i className={`fab fa-linkedin fa-lg`} />
+                </a>
 
-              <a
-                target='_blank'
-                href='https://www.instagram.com/dev.penha/'
-                className={styles.link}>
-                <i className={`fab fa-instagram fa-lg`} />
-              </a>
+                <a
+                  target='_blank'
+                  href='https://www.instagram.com/dev.penha/'
+                  className={styles.link}>
+                  <i className={`fab fa-instagram fa-lg`} />
+                </a>
 
-              <a
-                target='_blank'
-                href='https://api.whatsapp.com/send?phone=5527998752135'
-                className={styles.link}>
-                <i className={`fab fa-whatsapp fa-lg`} />
-              </a>
+                <a
+                  target='_blank'
+                  href='https://api.whatsapp.com/send?phone=5527998752135'
+                  className={styles.link}>
+                  <i className={`fab fa-whatsapp fa-lg`} />
+                </a>
+              </div>
             </div>
-          </div>
-        </section>
-      </footer>
+          </section>
+        </footer>
+      </motion.div>
     </motion.div>
   )
 }
