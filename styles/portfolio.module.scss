@@ -805,7 +805,20 @@
 @media screen and (width: 720px) and (orientation: portrait) {
   #body {
     #grid1 {
-      height: 60vh;
+      height: 50vh;
+      background-position: center;
+    }
+
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+@media screen and (width: 1280px) and (orientation: portrait) {
+  #body {
+    #grid1 {
+      height: 180vh;
       background-position: center;
     }
 
