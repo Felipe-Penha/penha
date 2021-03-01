@@ -352,7 +352,7 @@ export default function Portfolio() {
             </div>
 
             <div className={styles.cardsGrid} id={styles.cardsGrid}>
-              <a href='/'>
+              <a target='_blank' href='https://penhaproshop.herokuapp.com/'>
                 <div className={styles.card} id={styles.card}>
                   <div className={styles.cardImage}>
                     <i
