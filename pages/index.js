@@ -351,45 +351,41 @@ export default function Portfolio() {
             </div>
 
             <div className={styles.cardsGrid} id={styles.cardsGrid}>
-              <Link href='/portfolio'>
-                <a>
-                  <div className={styles.card} id={styles.card}>
-                    <div className={styles.cardImage}>
-                      <i
-                        className={`fas fa-shopping-cart`}
-                        id={styles.cardImage}
-                      />
-                    </div>
-                    <h3 className={styles.cardTitle} id={styles.cardTitle}>
-                      Proshop
-                    </h3>
-                    <div
-                      className={styles.cardDescription}
-                      id={styles.cardDescription}>
-                      <p>Projeto de ecommerce feito com MERN</p>
-                    </div>
+              <a href='/'>
+                <div className={styles.card} id={styles.card}>
+                  <div className={styles.cardImage}>
+                    <i
+                      className={`fas fa-shopping-cart`}
+                      id={styles.cardImage}
+                    />
                   </div>
-                </a>
-              </Link>
+                  <h3 className={styles.cardTitle} id={styles.cardTitle}>
+                    Proshop
+                  </h3>
+                  <div
+                    className={styles.cardDescription}
+                    id={styles.cardDescription}>
+                    <p>Projeto de ecommerce feito com MERN</p>
+                  </div>
+                </div>
+              </a>
 
-              <Link href='/portfolio'>
-                <a>
-                  {' '}
-                  <div className={styles.card} id={styles.card}>
-                    <div className={styles.cardImage}>
-                      <i className={`fas fa-book-open`} id={styles.cardImage} />
-                    </div>
-                    <h3 className={styles.cardTitle} id={styles.cardTitle}>
-                      Portfolio
-                    </h3>
-                    <div
-                      className={styles.cardDescription}
-                      id={styles.cardDescription}>
-                      <p>Projeto de portfolio feito com Next.js</p>
-                    </div>
+              <a href='/'>
+                {' '}
+                <div className={styles.card} id={styles.card}>
+                  <div className={styles.cardImage}>
+                    <i className={`fas fa-book-open`} id={styles.cardImage} />
                   </div>
-                </a>
-              </Link>
+                  <h3 className={styles.cardTitle} id={styles.cardTitle}>
+                    Portfolio
+                  </h3>
+                  <div
+                    className={styles.cardDescription}
+                    id={styles.cardDescription}>
+                    <p>Projeto de portfolio feito com Next.js</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </section>
         </main>
