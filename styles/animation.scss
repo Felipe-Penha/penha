@@ -11,11 +11,11 @@
 
   .arrowContainer {
     opacity: 0;
-    width: 25px;
+    width: 1.5625rem;
 
     @media (max-width: 45em) {
-      width: 18px;
-      height: 13px;
+      width: 1.125rem;
+      height: 0.8125rem;
     }
 
     /* cubic-bezier-easing = sine / mehr Beispiele: https://easings.net/ */
@@ -25,11 +25,11 @@
   }
 
   .arrowDown {
-    height: 6px;
+    height: 0.375rem;
     background: black;
     transform: rotate(45deg);
     transform-origin: 0% 0%;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
   }
   .arrowDown:after {
     content: '';
@@ -38,7 +38,7 @@
     height: 100%;
     bottom: 0;
     left: 100%;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     background: black;
     transform: rotate(-90deg);
     transform-origin: 0% 100%;
@@ -50,7 +50,7 @@
     }
 
     50% {
-      transform: translateY(-15px);
+      transform: translateY(-0.9375rem);
       opacity: 0;
     }
 
