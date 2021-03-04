@@ -1,0 +1,831 @@
+.body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-basis: content;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    min-width: 21.875rem;
+    //min-height: 2000px;
+  
+    .link {
+      transition: color 0.15s ease;
+    }
+    .link:hover {
+      color: #0070f3;
+    }
+  
+    .grid1 {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+  
+      height: 100vh;
+      //background-image: url('/webDev.svg');
+      //background-repeat: no-repeat;
+      //background-position: center 4rem;
+      //background-size: 50%;
+  
+      .heroImage {
+        width: 24.5rem;
+      }
+  
+      .textContainer {
+        display: flex;
+        flex-direction: column;
+  
+        width: 100vw;
+        margin: 0 6.25rem;
+  
+        .brand {
+          font-family: 'Poppins', sans-serif;
+          font-size: 2.1875rem;
+          font-weight: 600;
+          color: black;
+  
+          transform: translate(0, -4.375rem);
+          //text-shadow: 2px 2px black;
+        }
+  
+        .headerGroup {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          flex-wrap: nowrap;
+          line-height: 1;
+          //-140px
+          transform: translate(0, -2.75rem);
+          color: black;
+        }
+  
+        .title {
+          font-family: 'Poppins', sans-serif;
+          font-size: 4.75rem;
+          font-weight: 500;
+          text-align: left;
+          color: #fd9b08;
+  
+          //text-shadow: 2px 2px black;
+        }
+  
+        .description {
+          font-family: 'Poppins', sans-serif;
+          font-size: 1.375rem;
+          font-weight: 300;
+          line-height: 1.6;
+          // transform: translate(0, 0.625rem);
+          max-width: .25rem;
+          text-align: center;
+          color: black;
+        }
+  
+        .contact {
+          display: flex;
+          flex-direction: column;
+          flex-basis: content;
+          flex-wrap: nowrap;
+          text-align: center;
+          //max-width: 80px;
+          transform: translate(0, 8.125rem);
+  
+          .contactText {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #fd9b08;
+            padding-bottom: 0.625rem;
+            text-shadow: 1px 1px black;
+          }
+  
+          .contactLinks {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 1.125rem;
+            color: black;
+            //text-shadow: 2px 2px black;
+  
+            :not(:last-child) {
+              padding-right: 0.625rem;
+            }
+          }
+        }
+      }
+    }
+  
+    .main {
+      display: flex;
+      flex-direction: column;
+      flex-basis: content;
+      flex-wrap: nowrap;
+      margin: 0 6.25rem;
+  
+      .freelancer {
+        color: #0070f3;
+      }
+  
+      @keyframes scroll {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+  
+      .page {
+        margin-bottom: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        flex-basis: content;
+        flex-wrap: nowrap;
+        animation-name: scroll;
+        animation-duration: 2s;
+        animation-delay: calc(var(--scroll) * -1s);
+  
+        .sectionTitle {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+  
+          .headerTitle {
+            margin-bottom: -1.25rem;
+          }
+        }
+  
+        .sectionDescription {
+          text-align: center;
+          line-height: 1.7;
+        }
+  
+        .line {
+          height: 0.125rem;
+          width: 1.875rem;
+          background-color: #0070f3;
+        }
+  
+        .cardsGrid {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          .card {
+            margin: 1rem;
+            flex-basis: content;
+            padding: 1.5rem;
+            text-align: center;
+            color: inherit;
+            text-decoration: none;
+            border: 1px solid black;
+            border-radius: 10px;
+            transition: color 0.15s ease, border-color 0.15s ease;
+  
+            i {
+              font-size: 60px;
+            }
+          }
+          .card:hover,
+          .card:focus,
+          .card:active {
+            color: #0070f3;
+            border-color: #0070f3;
+          }
+        }
+  
+        .sectionAbout {
+          display: flex;
+          flex-direction: column;
+  
+          .aboutText {
+            text-align: justify;
+            line-height: 1.7;
+          }
+  
+          .sectionImage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+  
+            .image {
+              margin-top: 1, 5625;
+              width: 12.5rem;
+            }
+  
+            .contact {
+              display: flex;
+              flex-direction: column;
+              flex-basis: content;
+              flex-wrap: nowrap;
+              text-align: center;
+              max-width: 80px;
+  
+              .contactText {
+                font-size: 1rem;
+                font-weight: 500;
+                color: black;
+                padding: 0.625rem 0;
+              }
+  
+              .contactLinks {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                color: #fd9b08c5;
+  
+                :not(:last-child) {
+                  padding-right: 0.625rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .footer {
+      display: flex;
+      flex-direction: column;
+      background-color: #374548;
+      height: 4, 375rem;
+  
+      .footerGrid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 6.25rem;
+        align-items: center;
+  
+        .brand {
+          font-family: 'Poppins', sans-serif;
+          font-size: 1, 875;
+          font-weight: 300;
+          color: #f9f9f9;
+          transform: translate(0, 00.625rem);
+        }
+  
+        .contact {
+          display: flex;
+          flex-direction: column;
+          flex-basis: content;
+          flex-wrap: nowrap;
+          //text-align: center;
+          //max-width: 80px;
+  
+          .contactText {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #fd9b08;
+            padding: 0.625rem 0;
+            text-align: center;
+          }
+  
+          .contactLinks {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: #f9f9f9;
+            font-size: 1rem;
+  
+            :not(:last-child) {
+              padding-right: 0.625rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  /*
+  
+  @media only screen and (max-width: 1024px) {
+    #body {
+      #grid1 {
+        height: 100vh;
+        background-position: center;
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    #brand {
+      font-size: 25px;
+    }
+  
+    #body {
+      #grid1 {
+        background-position: center;
+        height: 90vh;
+      }
+    }
+  
+    #textContainer {
+      margin: 0 0.5rem;
+  
+      #headerGroup {
+        transform: translate(0, -100px);
+      }
+      #title {
+        font-size: 35px;
+      }
+  
+      #description {
+        font-size: 16px;
+      }
+    }
+  
+    #contactText {
+      font-size: 14px;
+    }
+  
+    #contactLinks {
+      font-size: 14px;
+    }
+  
+    #headerTitle {
+      margin-bottom: -10px;
+    }
+  
+    #sectionTitle {
+      font-size: 14px;
+    }
+  
+    #sectionDescription {
+      font-size: 14px;
+    }
+  
+    #cardImage {
+      font-size: 45px;
+    }
+  
+    #cardTitle {
+      font-size: 16px;
+    }
+  
+    #cardDescription {
+      font-size: 14px;
+    }
+  
+    #image {
+      width: 100px;
+    }
+  
+    #aboutText {
+      font-size: 14px;
+      line-height: 1.3;
+      text-align: center;
+    }
+  
+    #footerGrid {
+      margin: 0 1.5rem;
+  
+      #brand {
+        transform: translate(0, 10px);
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 414px) {
+    #brand {
+      font-size: 25px;
+      transform: translate(0, -50px);
+    }
+  
+    #body {
+      #grid1 {
+        background-position: center;
+        height: 60vh;
+      }
+    }
+  
+    #textContainer {
+      margin: 0 1rem;
+  
+      #headerGroup {
+        transform: translate(0, -100px);
+      }
+      #title {
+        font-size: 35px;
+      }
+  
+      #description {
+        font-size: 16px;
+      }
+    }
+  
+    #contactText {
+      font-size: 14px;
+    }
+  
+    #contactLinks {
+      font-size: 14px;flex-flow: row wrap
+      margin-bottom: -15px;
+    }
+  
+    #sectionTitle {
+      font-size: 14px;
+    }
+  
+    #sectionDescription {
+      font-size: 14px;
+    }
+  
+    #cardImage {
+      font-size: 45px;
+    }
+  
+    #cardTitle {
+      font-size: 16px;
+    }
+  
+    #cardDescription {
+      font-size: 14px;
+    }
+  
+    #image {
+      width: 100px;
+    }
+  
+    #aboutText {
+      font-size: 14px;
+      line-height: 1.3;
+      text-align: center;
+    }
+  
+    #footerGrid {
+      margin: 0 1.5rem;
+  
+      #brand {
+        transform: translate(0, 10px);
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 414px) {
+    #body {
+      #grid1 {
+        background-position: center;
+        height: 110vh;
+      }
+  
+      #brand {
+        transform: translate(0, -40px);
+      }
+  
+      #footer {
+        #brand {
+          transform: translate(0, 10px);
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 330px) {
+    #grid1 {
+      background-position: center;
+      height: 80vh;
+  
+      #textContainer {
+        margin: 0 3rem;
+      }
+  
+      #brand {
+        transform: translate(0, -40px);
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 1340px) {
+    #brand {
+      font-size: 50px;
+    }
+    #title {
+      font-size: 80px;
+    }
+  
+    #description {
+      font-size: 30px;
+    }
+  
+    #contactText {
+      font-size: 22px;
+      text-align: center;
+    }
+  
+    #contactLinks {
+      font-size: 25px;
+    }
+  
+    #sectionTitle {
+      font-size: 25px;
+    }
+  
+    #sectionDescription {
+      font-size: 25px;
+    }
+  
+    #cardImage {
+      font-size: 80px;
+    }
+  
+    #cardTitle {
+      font-size: 25px;
+    }
+  
+    #cardDescription {
+      font-size: 20px;
+    }
+    #sectionAbout {
+      #contact {
+        display: flex;
+        align-items: center;
+  
+        #contactText {
+          font-size: 22px;
+        }
+  
+        #contactLinks {
+          font-size: 25px;
+        }
+      }
+    }
+    #aboutText {
+      font-size: 25px;
+    }
+  
+    #image {
+      width: 250px;
+    }
+  
+    #footer {
+      height: 100px;
+  
+      #brand {
+        font-size: 50px;
+      }
+  
+      #contactText {
+        font-size: 22px;
+      }
+  
+      #contactLinks {
+        font-size: 25px;
+      }
+    }
+  }
+  
+  @media screen and (width: 812px) and (orientation: landscape) {
+    #body {
+      #grid1 {
+        height: 180vh;
+        background-position: center;
+  
+        #brand {
+          transform: translate(1.2rem, -50px);
+        }
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 736px) and (orientation: landscape) {
+    #body {
+      #grid1 {
+        height: 180vh;
+        background-position: center;
+  
+        #brand {
+          transform: translate(1.2rem, -50px);
+        }
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 720px) and (orientation: landscape) {
+    #body {
+      #grid1 {
+        height: 100vh;
+        background-position: center;
+  
+        #brand {
+          transform: translate(1.2rem, -50px);
+        }
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 667px) and (orientation: landscape) {
+    #body {
+      #grid1 {
+        height: 180vh;
+        background-position: center;
+  
+        #brand {
+          transform: translate(1.2rem, -50px);
+        }
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 653px) and (orientation: landscape) {
+    #body {
+      #grid1 {
+        height: 200vh;
+        background-position: center;
+  
+        #brand {
+          transform: translate(1.2rem, -50px);
+        }
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 568px) and (orientation: landscape) {
+    #body {
+      #grid1 {
+        height: 180vh;
+        background-position: center;
+  
+        #brand {
+          transform: translate(1.2rem, -50px);
+        }
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 640px) and (orientation: landscape) {
+    #body {
+      #grid1 {
+        height: 170vh;
+        background-position: center;
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 731px) and (orientation: landscape) {
+    #body {
+      #grid1 {
+        height: 170vh;
+        background-position: center;
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 823px) and (orientation: landscape) {
+    #body {
+      #grid1 {
+        height: 170vh;
+        background-position: center;
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 1024px) and (orientation: landscape) {
+    #grid1 {
+      height: 100vh;
+      background-position: center;
+    }
+  
+    #headerTitle {
+      margin-bottom: -5px;
+    }
+  }
+  
+  @media screen and (width: 1366px) and (orientation: landscape) {
+    #grid1 {
+      height: 100vh;
+      background-position: center;
+    }
+  }
+  
+  @media screen and (width: 360px) and (orientation: portrait) {
+    #body {
+      #grid1 {
+        height: 70vh;
+        background-position: center;
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 375px) and (orientation: portrait) {
+    #body {
+      #grid1 {
+        height: 70vh;
+        background-position: center;
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 414px) and (orientation: portrait) {
+    #body {
+      #grid1 {
+        height: 60vh;
+        background-position: center;
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 800px) and (orientation: portrait) {
+    #body {
+      #grid1 {
+        height: 60vh;
+        background-position: center;
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 411px) and (orientation: portrait) {
+    #body {
+      #grid1 {
+        height: 60vh;
+        background-position: center;
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 720px) and (orientation: portrait) {
+    #body {
+      #grid1 {
+        height: 50vh;
+        background-position: center;
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  @media screen and (width: 1280px) and (orientation: landscape) {
+    #body {
+      #grid1 {
+        height: 180vh;
+        background-position: center;
+      }
+  
+      #headerTitle {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+  */
+  

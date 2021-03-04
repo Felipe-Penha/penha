@@ -1,0 +1,298 @@
+.header {
+  grid-area: header;
+  margin: 0 5.25rem;
+
+  @media (max-width: 53.375rem) {
+    margin: 0 3rem;
+  }
+
+  // 767px
+  @media (max-width: 47.9375em) {
+    margin: 0 2.25rem;
+  }
+
+  .grid1 {
+    height: 30rem;
+    background-image: url('/webDev.svg');
+    background-repeat: no-repeat;
+    background-position: center 10rem;
+    background-size: 50%;
+    background-image: none;
+
+    @media (max-width: $laptop) {
+      height: 30rem;
+    }
+    @media (max-width: 63.9375rem) and (min-width: $tablet) {
+      height: 30rem;
+      background-size: 45%;
+    }
+
+    @media (max-device-width: 50.75rem) and (orientation: landscape) {
+      background-position: center 22.6rem;
+      background-size: 40%;
+    }
+
+    @media (max-device-width: 46rem) and (orientation: landscape) {
+      background-position: center 13.2rem;
+      background-size: 40%;
+    }
+
+    @media (max-width: 47.9375rem) and (min-width: 33.8125rem) {
+      height: 25rem;
+    }
+
+    @media (max-width: 41.6875rem) {
+      background-position: center 14.5rem;
+    }
+
+    @media (max-width: 40rem) {
+      background-position: center 14.8rem;
+    }
+
+    @media (max-device-width: 37.5rem) and (orientation: portrait) {
+      background-image: none;
+    }
+
+    @media (max-width: 37.5rem) and (orientation: landscape) {
+      background-image: none;
+    }
+
+    @media (max-device-width: 35.5rem) {
+      background-position: center 16.4rem;
+    }
+
+    @media (width: $surfaceDuo) and (height: $smartPhone) {
+      height: 25rem;
+    }
+
+    @media (max-width: 20.4375rem) and (min-width: 19.5625rem) {
+      height: 35rem;
+    }
+
+    @media (max-width: 19.5rem) {
+      height: 35rem;
+    }
+
+    /*
+    @media (max-width: $laptop) {
+      height: 100vh;
+    }
+
+    @media (max-width: $laptop) and (height: 85.375em) {
+      height: 40vh;
+    }
+
+    @media (max-width: 1023px) {
+      background-image: none;
+      height: 90vh;
+    }
+
+    @media (max-width: $tablet) {
+      height: 110vh;
+      background-image: none;
+    }
+    // 1366px
+    @media (max-width: $laptop) and (height: 85.375em) {
+      height: 50vh;
+      background-position: center 22rem;
+    }
+
+    // iPhoneX
+    @media (max-device-width: 900px) and (orientation: landscape) {
+      height: 150vh;
+    }
+
+    @media (max-width: $tablet) and (height: $laptop) {
+      height: 60vh;
+      background-position: center 25rem;
+    }
+
+    // 767 px
+    @media (max-width: 47.9375em) {
+      height: 60vh;
+    }
+
+    // iPhone 6Plus
+    @media (max-device-width: 800px) and (orientation: landscape) {
+      height: 100vh;
+    }
+
+    @media (max-device-width: 720px) and (orientation: landscape) {
+      height: 80vh;
+    }
+
+    // 719px
+    @media (max-width: 44.9375em) {
+      height: 60vh;
+      // 719px
+      @media (max-device-width: 44.9375em) and (orientation: landscape) {
+        height: 120vh;
+      }
+    }
+
+    // 639px
+    @media (max-width: 39.9375em) {
+      height: 60vh;
+      background-image: none;
+      // iPhone 5
+      @media (max-device-width: 600px) and (orientation: landscape) {
+        height: 120vh;
+      }
+    }
+
+    @media (max-width: $surfaceDuo) {
+      height: 80vh;
+      @media (max-device-width: $surfaceDuo) and (orientation: landscape) {
+        height: 120vh;
+      }
+    }
+
+    @media (width: $surfaceDuo) and (height: 45em) {
+      height: 50vh;
+      background-image: none;
+    }
+
+    @media (max-width: $phone) {
+      background-image: none;
+      height: 80vh;
+    }
+
+    @media (width: $pixel) and (height: 51.4375em) {
+      height: 60vh;
+    }
+
+    @media (width: $pixel) and (height: 45.6875em) {
+      height: 70vh;
+    }
+
+    @media (width: $iPhone) and (height: 46em) {
+      height: 70vh;
+    }
+
+    @media (max-width: $iPhoneX) {
+      height: 80vh;
+    }
+
+    @media (width: $iPhoneX) and (height: 50.75em) {
+      height: 60vh;
+    }
+
+    @media (max-width: 327px) {
+      height: 90vh;
+    }
+
+    @media (max-width: $smallPhone) {
+      height: 90vh;
+    }
+
+    @media (width: $galaxyFold) and (height: 40.8125em) {
+      height: 90vh;
+    } */
+
+    .heroImage {
+      display: none;
+      width: 200px;
+    }
+
+    .textContainer {
+      grid-area: textContainer;
+      display: grid;
+      grid-template-areas:
+        'brand'
+        'headerGroup';
+      row-gap: 4rem;
+      font-family: 'Poppins', sans-serif;
+
+      .brand {
+        grid-area: brand;
+        font-size: 3.75rem;
+        font-weight: 600;
+
+        @media (max-width: $laptop) {
+          font-size: 2.2rem;
+        }
+      }
+      .headerGroup {
+        grid-area: headerGroup;
+        justify-self: center;
+        display: grid;
+        grid-template-areas:
+          'title'
+          'description'
+          'contact';
+        row-gap: 0.5rem;
+        justify-items: center;
+
+        @media (min-width: $laptop) {
+          transform: translate(0, 3rem);
+        }
+
+        @media (width: $laptop) and (height: 85.375em) {
+          transform: translate(0, 8rem);
+        }
+
+        @media (max-width: $laptop) {
+          transform: translate(0, 4rem);
+        }
+
+        .title {
+          grid-area: title;
+          font-size: 5rem;
+          font-weight: 600;
+          color: #fd9b08;
+          text-align: center;
+
+          @media (max-width: $laptop) {
+            font-size: 2.7rem;
+          }
+        }
+
+        .description {
+          grid-area: description;
+          font-size: 1.35rem;
+          font-weight: 400;
+          color: rgba(0, 0, 0, 0.89);
+          text-align: center;
+
+          @media (max-width: $laptop) {
+            font-size: 1rem;
+          }
+        }
+
+        .contact {
+          grid-area: contact;
+          display: grid;
+          grid-template-areas:
+            'contactText'
+            'contactLinks';
+          row-gap: 0.5rem;
+          justify-items: center;
+          margin-top: 3rem;
+
+          .contactText {
+            grid-area: contactText;
+            font-size: 1.18rem;
+            font-weight: 600;
+            color: #0070f3;
+
+            @media (max-width: $laptop) {
+              font-size: 1rem;
+            }
+          }
+
+          .contactLinks {
+            grid-area: contactLinks;
+            display: grid;
+            grid-template-areas: 'linkedin instagram whatsapp';
+            font-size: 1.3rem;
+            column-gap: 0.5rem;
+
+            @media (max-width: $laptop) {
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

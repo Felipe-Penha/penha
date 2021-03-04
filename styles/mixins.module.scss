@@ -1,0 +1,52 @@
+// 1200px
+$desktop: 75em;
+// 1024px
+$laptop: 64em;
+// 768px
+$tablet: 48em;
+// 720px
+$smartPhone: 39.9375em;
+// 540px
+$surfaceDuo: 33.75em;
+// 480px
+$phone: 30em;
+//414px
+$iPhone: 25.875em;
+// 411px
+$pixel: 25.6875em;
+// 375px
+$iPhoneX: 23.4375em;
+// 320px
+$smallPhone: 20em;
+// 280px
+$galaxyFold: 17.5em;
+
+// 640px, 1024px, 1400px
+$breakpoints-up: (
+  'medium': '40em',
+  'large': '64em',
+  'xlarge': '87.5em',
+);
+
+// 639px, 1023px, 1399px
+$breakpoints-down: (
+  'smaller': '26.6875em',
+  'smallest': '32.1875em',
+  'small': '39.9375em',
+  'smedium': '56.25em',
+  'medium': '63.9375em',
+  'larger': '71em',
+  'large': '87.4375em',
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}

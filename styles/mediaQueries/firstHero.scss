@@ -1,0 +1,445 @@
+// PORTRAIT ---- Specific and lesser width after all
+
+// 415px
+@media only screen and (max-width: 25.9375em) and (orientation: portrait) {
+    .header {
+      margin: 0 3.25rem;
+  
+      .grid1 {
+        background-size: 100%;
+        background-position: center 17rem;
+        height: 70vh;
+  
+        .textContainer {
+          .brand {
+            font-size: 2.2rem;
+          }
+  
+          .headerGroup {
+            .title {
+              font-size: 2.85rem;
+            }
+  
+            .description {
+              font-size: 1.1rem;
+              max-width: 20rem;
+            }
+  
+            .contact {
+              .contactText {
+                font-size: 1.1rem;
+              }
+  
+              .contactLinks {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // 375px
+  @media only screen and (max-width: 23.43755em) and (orientation: portrait) {
+    .header {
+      margin: 0 3.25rem;
+  
+      .grid1 {
+        background-size: 100%;
+        background-position: center 17rem;
+        height: 70vh;
+  
+        .textContainer {
+          .brand {
+            font-size: 2.2rem;
+          }
+  
+          .headerGroup {
+            .title {
+              font-size: 2.85rem;
+            }
+  
+            .description {
+              font-size: 1.1rem;
+              max-width: 20rem;
+            }
+  
+            .contact {
+              .contactText {
+                font-size: 1.1rem;
+              }
+  
+              .contactLinks {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // iPhone 6/7/8 Plus 414px - 736px
+  @media only screen and (device-width: 25.875em) and (device-height: 46em) and (-webkit-device-pixel-ratio: 3) {
+    .header {
+      margin: 0 3.25rem;
+  
+      .grid1 {
+        background-size: 100%;
+        background-image: none;
+        background-position: center 15.5rem;
+        height: 60vh;
+  
+        .textContainer {
+          .brand {
+            font-size: 2.2rem;
+          }
+  
+          .headerGroup {
+            .title {
+              font-size: 2.85rem;
+            }
+  
+            .description {
+              font-size: 1.1rem;
+              max-width: 20rem;
+            }
+  
+            .contact {
+              .contactText {
+                font-size: 1.1rem;
+              }
+  
+              .contactLinks {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // 375px - 812px iPhoneX
+  @media only screen and (device-width: 23.43755em) and (device-height: 50.75em) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .header {
+      margin: 0 3.25rem;
+  
+      .grid1 {
+        background-size: 100%;
+        background-image: none;
+        background-position: center 17rem;
+        height: 50vh;
+  
+        .textContainer {
+          .brand {
+            font-size: 2.2rem;
+          }
+  
+          .headerGroup {
+            .title {
+              font-size: 2.85rem;
+            }
+  
+            .description {
+              font-size: 1.1rem;
+              max-width: 20rem;
+            }
+  
+            .contact {
+              .contactText {
+                font-size: 1.1rem;
+              }
+  
+              .contactLinks {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // iPhone 6/7/8 375px - 667px
+  @media only screen and (device-width: 23.43755em) and (device-height: 41.6875em) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    .header {
+      margin: 0 3.25rem;
+  
+      .grid1 {
+        background-size: 100%;
+        background-image: none;
+        background-position: center 15.5rem;
+        height: 60vh;
+  
+        .textContainer {
+          .brand {
+            font-size: 2.2rem;
+          }
+  
+          .headerGroup {
+            .title {
+              font-size: 2.85rem;
+            }
+  
+            .description {
+              font-size: 1.1rem;
+              max-width: 20rem;
+            }
+  
+            .contact {
+              .contactText {
+                font-size: 1.1rem;
+              }
+  
+              .contactLinks {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // 360px
+  @media only screen and (max-width: 22.5em) and (orientation: portrait) {
+    .header {
+      margin: 0 3.25rem;
+  
+      .grid1 {
+        background-size: 100%;
+        background-position: center 21rem;
+        height: 85vh;
+  
+        .textContainer {
+          .brand {
+            font-size: 2.2rem;
+          }
+  
+          .headerGroup {
+            .title {
+              font-size: 2.85rem;
+            }
+  
+            .description {
+              font-size: 1.1rem;
+              max-width: 20rem;
+            }
+  
+            .contact {
+              .contactText {
+                font-size: 1.1rem;
+              }
+  
+              .contactLinks {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // 320px
+  @media only screen and (max-width: 20em) and (orientation: portrait) {
+    .header {
+      margin: 0 2.25rem;
+  
+      .grid1 {
+        background-size: 100%;
+        background-position: center 25.5rem;
+        height: 103.5vh;
+  
+        .textContainer {
+          .brand {
+            font-size: 2.2rem;
+          }
+  
+          .headerGroup {
+            .title {
+              font-size: 2.85rem;
+            }
+  
+            .description {
+              font-size: 1.1rem;
+              max-width: 20rem;
+            }
+  
+            .contact {
+              .contactText {
+                font-size: 1.1rem;
+              }
+  
+              .contactLinks {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // LANDSCAPE
+  
+  /*
+  @include breakpoint-down(larger) {
+    .header {
+      margin: 0 3.25rem;
+  
+      .grid1 {
+        background-size: 100%;
+        background-position: center 4rem;
+        height: 120vh;
+  
+        .textContainer {
+          .brand {
+            font-size: 2.2rem;
+          }
+  
+          .headerGroup {
+            .title {
+              font-size: 2.85rem;
+            }
+  
+            .description {
+              font-size: 1.1rem;
+              max-width: 20rem;
+            }
+  
+            .contact {
+              .contactText {
+                font-size: 1.1rem;
+              }
+  
+              .contactLinks {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @include breakpoint-down(medium) {
+    .header {
+      margin: 0 3.25rem;
+  
+      .grid1 {
+        background-size: 100%;
+        background-position: center 4rem;
+        height: 115vh;
+  
+        .textContainer {
+          .brand {
+            font-size: 2.2rem;
+          }
+  
+          .headerGroup {
+            .title {
+              font-size: 2.85rem;
+            }
+  
+            .description {
+              font-size: 1.1rem;
+              max-width: 20rem;
+            }
+  
+            .contact {
+              .contactText {
+                font-size: 1.1rem;
+              }
+  
+              .contactLinks {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @include breakpoint-down(smallest) {
+    .header {
+      margin: 0 3.25rem;
+  
+      .grid1 {
+        background-size: 100%;
+        background-position: center 21rem;
+        height: 100vh;
+  
+        .textContainer {
+          .brand {
+            font-size: 2.2rem;
+          }
+  
+          .headerGroup {
+            .title {
+              font-size: 2.85rem;
+            }
+  
+            .description {
+              font-size: 1.1rem;
+              max-width: 20rem;
+            }
+  
+            .contact {
+              .contactText {
+                font-size: 1.1rem;
+              }
+  
+              .contactLinks {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .header {
+      margin: 0 3.25rem;
+  
+      .grid1 {
+        background-size: 100%;
+        background-position: center 4rem;
+        height: 80vh;
+  
+        .textContainer {
+          .brand {
+            font-size: 2.2rem;
+          }
+  
+          .headerGroup {
+            .title {
+              font-size: 2.85rem;
+            }
+  
+            .description {
+              font-size: 1.1rem;
+              max-width: 20rem;
+            }
+  
+            .contact {
+              .contactText {
+                font-size: 1.1rem;
+              }
+  
+              .contactLinks {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  */
+  

@@ -1,0 +1,450 @@
+// 415px
+@media only screen and (max-width: 25.9375em) and (orientation: portrait) {
+    .main {
+      row-gap: 0rem;
+      .page1,
+      .page3 {
+        .sectionTitle {
+          .headerTitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+          }
+  
+          .line {
+            height: 0.1rem;
+          }
+  
+          .sectionDescription {
+            grid-area: sectionDescription;
+            font-size: 1.1rem;
+            line-height: 1.2;
+            text-align: center;
+          }
+        }
+  
+        .cardsGrid {
+          display: flex;
+          flex-direction: column;
+  
+          .card {
+            max-width: 12rem;
+            .cardImage {
+              font-size: 2.5rem;
+            }
+  
+            .cardTitle {
+              font-family: 'Poppins', sans-serif;
+              font-size: 1.25rem;
+            }
+  
+            .cardDescription {
+              font-size: 1.1rem;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+  
+      .page2 {
+        row-gap: 1rem;
+        .sectionTitle {
+          .headerTitle {
+            font-size: 1.1rem;
+          }
+  
+          .line {
+            height: 0.1rem;
+          }
+        }
+  
+        .grid2 {
+          .sectionAbout {
+            .sectionImage {
+              .image {
+                grid-area: image;
+                width: 10.25rem;
+              }
+  
+              .contact {
+                .contactText {
+                  font-size: 1.1rem;
+                }
+  
+                .contactLinks {
+                  font-size: 1.2rem;
+                }
+              }
+            }
+  
+            .aboutText {
+              grid-area: aboutText;
+              font-size: 1.1rem;
+              line-height: 1.5;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // 360px
+  @media only screen and (max-width: 22.5em) and (orientation: portrait) {
+    .main {
+      row-gap: 0rem;
+      .page1,
+      .page3 {
+        .sectionTitle {
+          .headerTitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+          }
+  
+          .line {
+            height: 0.1rem;
+          }
+  
+          .sectionDescription {
+            grid-area: sectionDescription;
+            font-size: 1.1rem;
+            line-height: 1.2;
+            text-align: center;
+          }
+        }
+  
+        .cardsGrid {
+          display: flex;
+          flex-direction: column;
+  
+          .card {
+            max-width: 12rem;
+            .cardImage {
+              font-size: 2.5rem;
+            }
+  
+            .cardTitle {
+              font-family: 'Poppins', sans-serif;
+              font-size: 1.25rem;
+            }
+  
+            .cardDescription {
+              font-size: 1.1rem;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+  
+      .page2 {
+        row-gap: 1rem;
+        .sectionTitle {
+          .headerTitle {
+            font-size: 1.1rem;
+          }
+  
+          .line {
+            height: 0.1rem;
+          }
+        }
+  
+        .grid2 {
+          .sectionAbout {
+            .sectionImage {
+              .image {
+                grid-area: image;
+                width: 10.25rem;
+              }
+  
+              .contact {
+                .contactText {
+                  font-size: 1.1rem;
+                }
+  
+                .contactLinks {
+                  font-size: 1.2rem;
+                }
+              }
+            }
+  
+            .aboutText {
+              grid-area: aboutText;
+              font-size: 1.1rem;
+              line-height: 1.5;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // 320px
+  @media only screen and (max-width: 20em) and (orientation: portrait) {
+    .main {
+      margin: 0 2.25rem;
+  
+      row-gap: 0rem;
+      .page1,
+      .page3 {
+        .sectionTitle {
+          .headerTitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+          }
+  
+          .line {
+            height: 0.1rem;
+          }
+  
+          .sectionDescription {
+            grid-area: sectionDescription;
+            font-size: 1.1rem;
+            line-height: 1.2;
+            text-align: center;
+          }
+        }
+  
+        .cardsGrid {
+          display: flex;
+          flex-direction: column;
+  
+          .card {
+            max-width: 12rem;
+            .cardImage {
+              font-size: 2.5rem;
+            }
+  
+            .cardTitle {
+              font-family: 'Poppins', sans-serif;
+              font-size: 1.25rem;
+            }
+  
+            .cardDescription {
+              font-size: 1.1rem;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+  
+      .page2 {
+        row-gap: 1rem;
+        .sectionTitle {
+          .headerTitle {
+            font-size: 1.1rem;
+          }
+  
+          .line {
+            height: 0.1rem;
+          }
+        }
+  
+        .grid2 {
+          .sectionAbout {
+            .sectionImage {
+              .image {
+                grid-area: image;
+                width: 10.25rem;
+              }
+  
+              .contact {
+                .contactText {
+                  font-size: 1.1rem;
+                }
+  
+                .contactLinks {
+                  font-size: 1.2rem;
+                }
+              }
+            }
+  
+            .aboutText {
+              grid-area: aboutText;
+              font-size: 1.1rem;
+              line-height: 1.5;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  /*
+  @include breakpoint-down(larger) {
+    .main {
+      row-gap: 0rem;
+      .page1,
+      .page3 {
+        .sectionTitle {
+          .headerTitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+          }
+  
+          .line {
+            height: 0.1rem;
+          }
+  
+          .sectionDescription {
+            grid-area: sectionDescription;
+            font-size: 1.1rem;
+            line-height: 1.2;
+            text-align: center;
+          }
+        }
+  
+        .cardsGrid {
+          display: flex;
+          flex-direction: column;
+  
+          .card {
+            .cardImage {
+              font-size: 2.5rem;
+            }
+  
+            .cardTitle {
+              font-family: 'Poppins', sans-serif;
+              font-size: 1.25rem;
+            }
+  
+            .cardDescription {
+              font-size: 1.1rem;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+  
+      .page2 {
+        row-gap: 1rem;
+        .sectionTitle {
+          .headerTitle {
+            font-size: 1.1rem;
+          }
+  
+          .line {
+            height: 0.1rem;
+          }
+        }
+  
+        .grid2 {
+          .sectionAbout {
+            .sectionImage {
+              .image {
+                grid-area: image;
+                width: 10.25rem;
+              }
+  
+              .contact {
+                .contactText {
+                  font-size: 1.1rem;
+                }
+  
+                .contactLinks {
+                  font-size: 1.2rem;
+                }
+              }
+            }
+  
+            .aboutText {
+              grid-area: aboutText;
+              font-size: 1.1rem;
+              line-height: 1.5;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @include breakpoint-down(medium) {
+    .main {
+      row-gap: 0rem;
+      .page1,
+      .page3 {
+        .sectionTitle {
+          .headerTitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+          }
+  
+          .line {
+            height: 0.1rem;
+          }
+  
+          .sectionDescription {
+            grid-area: sectionDescription;
+            font-size: 1.1rem;
+            line-height: 1.2;
+            text-align: center;
+          }
+        }
+  
+        .cardsGrid {
+          display: flex;
+          flex-direction: column;
+  
+          .card {
+            .cardImage {
+              font-size: 2.5rem;
+            }
+  
+            .cardTitle {
+              font-family: 'Poppins', sans-serif;
+              font-size: 1.25rem;
+            }
+  
+            .cardDescription {
+              font-size: 1.1rem;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+  
+      .page2 {
+        row-gap: 1rem;
+        .sectionTitle {
+          .headerTitle {
+            font-size: 1.1rem;
+          }
+  
+          .line {
+            height: 0.1rem;
+          }
+        }
+  
+        .grid2 {
+          .sectionAbout {
+            .sectionImage {
+              .image {
+                grid-area: image;
+                width: 10.25rem;
+              }
+  
+              .contact {
+                .contactText {
+                  font-size: 1.1rem;
+                }
+  
+                .contactLinks {
+                  font-size: 1.2rem;
+                }
+              }
+            }
+  
+            .aboutText {
+              grid-area: aboutText;
+              font-size: 1.1rem;
+              line-height: 1.5;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  */
+  

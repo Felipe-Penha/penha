@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import styles from '../styles/scss/portfolio.module.css'
+import styles from '../styles/portfolio.module.scss'
 import {
   motion,
   useSpring,
@@ -40,7 +40,7 @@ export default function Portfolio() {
           href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'
         />
       </Head>
-      <header>
+      <header className={styles.header}>
         <div className={styles.grid1} id={styles.grid1}>
           <div className={styles.textContainer} id={styles.textContainer}>
             <motion.div
@@ -206,11 +206,14 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
+          <div>
+            <img className={styles.heroImage} src='webDev.svg' alt='image' />
+          </div>
         </div>
       </header>
       <motion.div style={{ opacity }}>
         <main className={styles.main} id={styles.main}>
-          <section className={styles.page} id={styles.page}>
+          <section className={styles.page1} id={styles.page1}>
             <div className={styles.sectionTitle} id={styles.sectionTitle}>
               <div className={styles.headerTitle} id={styles.headerTitle}>
                 <h3>Serviço</h3>
@@ -276,7 +279,7 @@ export default function Portfolio() {
             </div>
           </section>
 
-          <section className={styles.page} id={styles.page}>
+          <section className={styles.page2} id={styles.page2}>
             <div className={styles.sectionTitle} id={styles.sectionTitle}>
               <div className={styles.headerTitle} id={styles.headerTitle}>
                 <h3>Sobre Mim</h3>
@@ -338,7 +341,7 @@ export default function Portfolio() {
               </div>
             </div>
           </section>
-          <section className={styles.page} id={styles.page}>
+          <section className={styles.page3} id={styles.page3}>
             <div className={styles.sectionTitle} id={styles.sectionTitle}>
               <div className={styles.headerTitle} id={styles.headerTitle}>
                 <h3>Projetos</h3>
