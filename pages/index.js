@@ -205,12 +205,30 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-          </div>
-          <div>
-            <img className={styles.heroImage} src='webDev.svg' alt='image' />
+            <motion.div
+              initial='hidden'
+              animate='visible'
+              variants={{
+                hidden: {
+                  opacity: 0,
+                },
+                visible: {
+                  opacity: 1,
+                  transition: {
+                    delay: 2.5,
+                    ease: 'easeInOut',
+                  },
+                },
+              }}
+              className={styles.arrows}>
+              <div className={styles.arrowContainer}>
+            <div className={styles.arrowDown}></div>
+        </div>
+            </motion.div>
           </div>
         </div>
       </header>
+
       <motion.div style={{ opacity }}>
         <main className={styles.main} id={styles.main}>
           <section className={styles.page1} id={styles.page1}>
